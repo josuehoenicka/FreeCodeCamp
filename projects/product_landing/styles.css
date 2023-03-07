@@ -1,0 +1,278 @@
+/********** root **********/
+
+:root {
+    --red-wine-on: #b30000;
+    --red-wine-off: #800000;
+    --red-wine-soft: #630c0c93;
+    --black-on: #030303;
+    --black-off: #181818;
+    --white-on: #fdfdfd;
+    --white-off: #eee3e3;
+}
+    
+/********** general **********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black-off);
+    color: var(--white-off);
+}
+
+a {
+    text-decoration: none;  
+    color: var(--white-off);
+}
+
+/********** header **********/
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+}
+
+
+/* logo */
+
+img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;  
+    margin-top: 15px;
+    margin-left: 75px;
+}
+
+/* nav */
+
+#nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    margin-right: 20px;
+}
+
+a {
+    margin-top: 5vh;
+    margin-right: 55px;
+}
+
+/********** section **********/
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 8fr;
+}
+
+/* form */
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#label-form {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#email {
+    margin-top: 15px;
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#submit {
+    margin-top: 20px;
+    width: 170px;
+    height: 45px;
+    border-radius: 30px;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+/* div-container */
+
+#div-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#title-features {
+    font-size: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    margin: 0 200px;
+    padding: 10px 0;
+}
+
+#presentation {
+    display: flex;
+    justify-content: center;
+}
+
+#price {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    margin-top: 100px;
+}
+
+.price {
+    background-color: var(--black-on);
+    color: var(--white-on);
+    margin: 30px 50px 0 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.label-price {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.p-price {
+    margin: 15px 0;
+}
+
+.number-price {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+#button-price {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+#button-price a {
+    text-align: center;
+    font-size: 23px;
+    padding-left: 25px;
+    color: var(--black-on);
+}
+
+/********** footer **********/
+
+footer {
+    display: flex;
+}
+
+#footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    text-decoration: none;
+    list-style-type: none; 
+    margin: 40px 10px 40px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/********** media query **********/
+    
+@media (max-width: 1150px){
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr 1fr;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--black-off);
+        color: var(--white-off);
+    }
+
+    /* header */
+
+    header {
+        display: none;
+    }
+
+    /* form */
+    
+    #label-form {
+        font-size: 35px;
+    }
+    
+    #email {
+        margin-top: 35px;
+        width: 80vw;
+    }
+    
+    #submit {
+        margin-top: 30px;
+        width: 40vw;
+    }
+
+    /* div-container */
+
+    #div-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #title-features {
+        font-size: 20px;
+    }
+
+    .features {
+        margin: 25px 50px;
+    }
+
+    #presentation {
+        display: none;
+    }
+
+    #price {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: 100vw;
+        margin: 20px 0;
+    }
+
+    /* footer */
+
+    footer {
+        display: none;
+    }
+
+}
