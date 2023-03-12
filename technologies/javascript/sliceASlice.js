@@ -12,4 +12,4 @@ function frankenSplice(arr1, arr2, n) {
     return newArr;
 }
 
-console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1)); // [ 4, 1, 2, 3, 5, 6 ]

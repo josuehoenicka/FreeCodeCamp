@@ -12,4 +12,4 @@ function repeatStringNumTimes(str, num) {
     return result;
 }
 
-console.log(repeatStringNumTimes("abc", 3));
+console.log(repeatStringNumTimes("abc", 3)); // abcabcabc

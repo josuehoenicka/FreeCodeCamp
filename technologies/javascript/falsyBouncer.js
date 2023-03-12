@@ -7,4 +7,4 @@ function bouncer(arr) {
     return filArr;
 }
 
-console.log(bouncer([7, "ate", "", false, 9]));
+console.log(bouncer([7, "ate", "", false, 9])); // [ 7, 'ate', 9 ]
